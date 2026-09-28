@@ -1,0 +1,266 @@
+.date {
+  color: #8b94a7;
+  margin-bottom: 5px;
+}
+
+.title {
+  margin-bottom: 16px;
+}
+
+.progress {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 24px;
+  pointer-events: none;
+}
+
+.progress label {
+  color: #2445b8;
+  margin-bottom: 8px;
+}
+
+.progress #works_done {
+  width: 100%;
+  height: 6px;
+  -webkit-appearance: none;
+}
+
+#works_done::-webkit-progress-bar {
+  border-radius: 10px;
+  background-color: #e6ecfb;
+}
+
+#works_done::-webkit-progress-value {
+  border-radius: 10px;
+  background-color: #2445b8;
+  transition: all 0.2s;
+}
+
+/* #works_done::-moz-progress-bar {
+  border-radius: 10px;
+  color: #2445b8;
+  background-color: #e6ecfb;
+} */
+
+.input {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+.input .todo {
+  color: #1c2333;
+  font-size: 16px;
+  width: 100%;
+  border: 1px solid #e8ebf2;
+  border-radius: 12px;
+  background-color: #f7f8fb;
+  padding: 0 12px;
+}
+
+.input .todo:focus {
+  outline: none;
+  border-color: #2445b8;
+}
+
+.input .add_todo {
+  font-size: 15px;
+  font-weight: 600;
+  border: none;
+  border-radius: 12px;
+  padding: 12px 16px;
+  white-space: nowrap;
+}
+
+.add_todo_inactive {
+  color: #9aa8d6;
+  background-color: #e6ecfb;
+  cursor: not-allowed;
+}
+
+.add_todo_active {
+  color: white;
+  background-color: #2445b8;
+  cursor: pointer;
+}
+
+.dist {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  background-color: #f1f3f8;
+  display: flex;
+  justify-content: center;
+  gap: 4px;
+  padding: 4px;
+  margin-bottom: 8px;
+  position: relative;
+}
+
+.active {
+  width: calc((100% - 16px) / 3);
+  height: calc(100% - 8px);
+  position: absolute;
+  border-radius: 9px;
+  background-color: white;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+  transition: all 0.2s;
+}
+
+.active_all {
+  transform: translateX(calc(-100% - 4px));
+}
+
+.active_left {
+}
+
+.active_done {
+  transform: translateX(calc(100% + 4px));
+}
+
+.dist li {
+  border-radius: 9px;
+  flex: 1;
+  text-align: center;
+  padding: 8px 0;
+  white-space: nowrap;
+  cursor: pointer;
+  z-index: 1;
+  transition: all 0.3s;
+}
+
+.li_inactive {
+  color: #8b94a7;
+}
+
+.li_active {
+  color: black;
+}
+
+.todo_works {
+  font-size: 16px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.todo_works .no_works {
+  padding: 40px 0 20px;
+}
+
+.no_works_active {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+}
+
+.no_works_inactive {
+  display: none;
+}
+
+.no_works .no_works_desc {
+  font-weight: 600;
+}
+
+.no_works .no_works_sub {
+  color: #8b94a7;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.todo_works .work_one {
+  width: 100%;
+  border-bottom: 1px solid #e8ebf2;
+}
+
+.work_one_active {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 4px;
+}
+
+.work_one_inactive {
+  display: none;
+}
+
+.work_one .work {
+  width: calc(100% - 40px);
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  cursor: pointer;
+  padding: 16px 0;
+}
+
+.work input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  accent-color: #2445b8;
+  margin: 0;
+}
+
+.work .work_desc {
+  width: 100%;
+  padding-left: 8px;
+}
+
+.work_desc_done {
+  color: #8b94a7;
+  text-decoration-line: line-through;
+  text-decoration-color: #2445b8;
+  text-decoration-thickness: 2px;
+}
+
+.work_one .delete_one {
+  width: 36px;
+  height: 36px;
+  /* border: 1px solid black; */
+  border-radius: 9px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.work_one:hover .delete_one {
+  color: #b7becc;
+  opacity: 1;
+}
+
+.work_one .delete_one:hover {
+  color: #d6364b;
+  background-color: #fdecee;
+}
+
+.bottom {
+  display: flex;
+  justify-content: end;
+}
+
+.bottom .delete_all {
+  color: #8b94a7;
+  font-size: 13px;
+  font-weight: 600;
+  white-space: nowrap;
+  border: none;
+  background: none;
+  padding: 6px 4px;
+}
+
+.delete_all_inactive {
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+.delete_all:hover {
+  color: #d6364b;
+  cursor: pointer;
+}

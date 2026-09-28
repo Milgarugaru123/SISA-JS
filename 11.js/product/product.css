@@ -1,0 +1,48 @@
+body {
+  margin: 0;
+}
+
+main {
+  width: 100%;
+  height: auto;
+  background-color: lightgray;
+}
+
+section {
+  width: 100%;
+  min-width: 1000px;
+  max-width: 1280px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 50px 20px;
+  padding: 30px 0;
+  margin: 0 auto;
+}
+
+article {
+  box-sizing: border-box;
+  width: auto;
+  height: auto;
+  background-color: white;
+  border: none;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.4);
+}
+
+.desc {
+  width: auto;
+  height: auto;
+  padding: 20px;
+}
+
+.stock {
+  width: fit-content;
+  color: rgb(0, 112, 28);
+  background-color: rgba(152, 231, 159, 0.3);
+  border: none;
+  border-radius: 100px;
+  padding: 5px 10px;
+}

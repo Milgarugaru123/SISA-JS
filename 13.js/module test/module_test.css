@@ -1,0 +1,58 @@
+.container {
+  box-sizing: border-box;
+  width: 500px;
+  height: fit-content;
+  border: 1px solid rgba(179, 179, 179, 0.5);
+  border-radius: 8px;
+  padding: 16px;
+  margin: 30px auto;
+}
+
+hr {
+  border-color: rgba(179, 179, 179, 0.3);
+  margin: 12px 0;
+}
+
+button {
+  box-sizing: border-box;
+  color: black;
+  background-color: white;
+  border: 1px solid rgba(179, 179, 179, 0.7);
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 6px 16px;
+  margin-right: 2px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.hover {
+  background-color: rgba(211, 211, 211, 0.4);
+}
+
+.chosen {
+  color: white;
+  background-color: black;
+  border: 1px solid black;
+}
+
+.count {
+  font-size: 12px;
+  font-weight: 500;
+  opacity: 0.8;
+}
+
+.container > div {
+  width: 100%;
+  height: auto;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+.hidden {
+  display: none;
+}

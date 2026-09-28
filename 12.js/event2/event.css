@@ -1,0 +1,19 @@
+.box {
+  width: 300px;
+  height: 300px;
+  border: 2px solid red;
+  margin-top: 10px;
+}
+
+#input {
+  width: 500px;
+  height: max-content;
+  text-wrap-mode: wrap;
+}
+
+.count {
+  font-weight: bold;
+}
+
+.show {
+}

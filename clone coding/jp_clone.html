@@ -1,0 +1,845 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JMoF Homepage Clone</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="root.css" />
+    <script type="text/javascript" defer>
+      function agreeToggle() {
+        document.querySelector(".cookie_announce").style.display = "none";
+      }
+    </script>
+    <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="welcome_page.css" />
+    <link rel="stylesheet" href="news.css" />
+    <link rel="stylesheet" href="about.css" />
+    <link rel="stylesheet" href="locationAndVR.css" />
+    <!-- <link rel="stylesheet" href="location.css" />
+    <link rel="stylesheet" href="vrJMoF.css" /> -->
+    <link rel="stylesheet" href="friend_sites.css" />
+    <link rel="stylesheet" href="footer.css" />
+    <script src="footer.js" defer></script>
+    <script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
+  </head>
+
+  <!--;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-->
+  <!--;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-->
+  <!--;;;;@@@@;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;@@@;;;;-->
+  <!--;;;;;@@@@@@;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;@@@@@@;;;;-->
+  <!--;;;;;@@@@@@@@@;;;;;;;;;;;;;;;;;;;;;;;;@@@@@@@@@;;;;-->
+  <!--;;;;;;;@@@@@@@@@;;;;;;;;;;;;;;;;;;;;@@@@@@@@@;;;;;;-->
+  <!--;;;;;;;;;;;;@@@@;@@@@@@@;;;;@@@@@@@;@@@@;;;;;;;;;;;-->
+  <!--;;;;;;;;;;;;@@@@;@@@@@@@@;@@@@@@@@@;@@@@;;;@@@@;;;;-->
+  <!--;;;;;;;;;;;;@@@@;@@@@;@@@@@@@@;@@@@;@@@@@@@@@@;;;;;-->
+  <!--;;;;;;;;;;;;@@@@;@@@@;;@@@@@;;;@@@@;@@@@@@;;;;;;;;;-->
+  <!--;;;;;;;;;;;;@@@@;@@@@;;;;@@;;@------=@@@;;;;;;;;;;;-->
+  <!--;;;;@@@@;;;;@@@@;@@@@;;;;;;;=---------@@;;;;;;;;;;;-->
+  <!--;;;;@@@@@@@@@@@@;@@@@;;;;;;;----------=@;;;;;;;;;;;-->
+  <!--;;;;;@@@@@@@@@@;;@@@@;;;;;;;======----@@;@@@@;;;;;;-->
+  <!--;;;;;;;;@@;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;@@;;;;;;;-->
+  <!--;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-->
+
+  <!-- body -->
+  <body style="background-color: var(--color-main)">
+    <!-- cookie announce -->
+    <div class="cookie_announce">
+      <div class="desc">
+        当サイトでは、サービスの提供とユーザーエクスペリエンスの向上のためにCookie（クッキー）を使用しています。当サイトの利用を継続することによって、Cookieの利用に同意したものとみなします。詳しくは「
+        <a href="https://www.jmof.jp/privacy-policy">
+          個人情報の取り扱いについて
+        </a>
+        」を参照してください。
+      </div>
+      <div class="agree_btn">
+        <button onclick="agreeToggle()">理解しました</button>
+      </div>
+    </div>
+
+    <!-- header -->
+    <header>
+      <nav>
+        <div class="main_logo">
+          <a href="#"><img src="top-logo-white.svg" alt="JMoF Logo" /></a>
+        </div>
+        <ul class="mid_menu">
+          <li>参加する</li>
+          <li>会場・ホテル</li>
+          <li>JMoFを知る</li>
+          <li>企画を探す</li>
+        </ul>
+        <button class="lang_change">
+          <iconify-icon icon="uil:english-to-chinese" width="20"></iconify-icon>
+          <span>&nbsp;日本語</span>
+          <iconify-icon icon="basil:caret-down-solid" width="20"></iconify-icon>
+        </button>
+      </nav>
+    </header>
+
+    <!-- main -->
+    <main>
+      <!-- welcome page -->
+      <section class="welcome">
+        <div class="landing_cover">
+          <img src="landing_bg.webp" alt="Background" />
+          <img src="landing_main.webp" alt="Main Character" />
+          <img src="landing_front_window.webp" alt="Window trace" />
+        </div>
+        <div class="main_info">
+          <img src="main-logo-ja.svg" alt="top logo" />
+          <p class="schedule">2027年1月8日（金）〜10日（日）</p>
+          <p class="destination">Aichi Sky Expo</p>
+          <a href="https://www.jmof.jp/registration" target="_blank"
+            ><button>参加登録</button></a
+          >
+        </div>
+      </section>
+
+      <!-- what's new? -->
+      <section class="news">
+        <h3>新着情報</h3>
+        <p class="sub_title">WHAT'S NEW?</p>
+        <div class="news_box">
+          <!-- <div class="new_icon">
+            <div></div>
+            NEW
+          </div> -->
+          <ul class="news_list">
+            <li>
+              <div class="new_icon">
+                <div></div>
+                NEW
+              </div>
+              <p class="desc">
+                参加登録：情報更新<br />
+                参加規約：情報更新<br />
+                支払い・払戻し・取消しについて：情報公開<br />
+                個人情報の取り扱いについて：情報更新<br />
+                宿泊予約について：情報更新<br />
+                デッドドッグパーティー：情報公開<br />
+                アーティストラウンジ：情報公開<br />
+                ウェルカムラウンジ：情報公開<br />
+                イラストコンテスト：情報公開<br />
+                パフォーマンスステージ：情報公開<br />
+                動画上映会：情報公開
+              </p>
+              <p class="date">2026年8月29日（土）</p>
+            </li>
+            <li>
+              <p class="desc">
+                参加登録：先行告知<br />
+                宿泊予約について：情報更新
+              </p>
+              <p class="date">2026年8月23日（日）</p>
+            </li>
+            <li>
+              <p class="desc">
+                着ぐるみクリエイターコンテスト：情報公開<br />
+                企画の募集：募集開始
+              </p>
+              <p class="date">2026年8月8日（土）</p>
+            </li>
+            <li>
+              <p class="desc">フォトコンペティション：募集開始</p>
+              <p class="date">2026年8月1日（土）</p>
+            </li>
+            <li>
+              <p class="desc">
+                参加規約：情報公開<br />
+                持ち込み企画の募集：情報公開
+              </p>
+              <p class="date">2026年7月25日（土）</p>
+            </li>
+            <li>
+              <p class="desc">JMoFアーカイブ公開</p>
+              <p class="date">2026年6月20日（土）</p>
+            </li>
+            <li>
+              <p class="desc">フォトコンペティション：テーマ発表</p>
+              <p class="date">2026年5月30日（土）</p>
+            </li>
+            <li>
+              <p class="desc">
+                開催場所について：情報公開<br />
+                宿泊予約について：情報公開
+              </p>
+              <p class="date">2026年4月26日（日）</p>
+            </li>
+            <li>
+              <p class="desc">スタッフ参加者の募集：募集終了</p>
+              <p class="date">2026年3月24日（火）</p>
+            </li>
+            <li>
+              <p class="desc">スタッフ参加者の募集：募集開始</p>
+              <p class="date">2026年3月9日（月）</p>
+            </li>
+            <li>
+              <p class="desc">
+                スタッフ参加者の募集：情報更新<br />
+                重要なお知らせ：「寄附受理通知書（JMoF 2026）」公開
+              </p>
+              <p class="date">2026年3月7日（土）</p>
+            </li>
+            <li>
+              <p class="desc">スタッフ参加者の募集：情報更新</p>
+              <p class="date">2026年3月1日（日）</p>
+            </li>
+            <li>
+              <p class="desc">スタッフ参加者の募集：情報公開</p>
+              <p class="date">2026年2月21日（土）</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- what is JMoF -->
+      <section class="about">
+        <div class="top_shadow"></div>
+        <div class="main_about">
+          <img src="JMoF-logo.svg" alt="JMoF Logo" class="about_logo" />
+          <p>
+            JMoF（ジェイモフ）は、ケモノが好きな人たちや興味を持っている人たちが、日本全国、さらには海外からも集まって、実際に対面して交流するケモノコンベンションです。
+          </p>
+          <p>
+            気の向くままに好きなことをするもよし、面白そうな企画に参加してみるもよし、はたまた自分で企画を立ててみるもよし。
+          </p>
+          <p>
+            さまざまなジャンルのたくさんの企画が同時に、複数日にわたって進行します。ぜひ、ご自身の「好き」とともに新しい「好き」を見つけてみてください。
+          </p>
+          <a href="https://www.jmof.jp/about" target="_blank"
+            ><button>もっと見る</button></a
+          >
+        </div>
+        <div class="bottom_blank"></div>
+        <div class="shadow"></div>
+      </section>
+
+      <!-- location -->
+      <section class="location">
+        <div><img src="hotel.webp" alt="hotel front" /></div>
+        <article>
+          <p class="sub_title">VENUE</p>
+          <h4>Aichi Sky Expo（愛知県国際展示場）</h4>
+        </article>
+      </section>
+
+      <!-- vr JMoF -->
+      <section class="vrJMoF">
+        <div><img src="vr-jmof.webp" alt="vr JMoF" /></div>
+        <article>
+          <p class="sub_title">CONCURRENT CONVENTION</p>
+          <h4>VR JMoF</h4>
+          <p class="desc">
+            VR
+            JMoFは、VRプラットフォームという新たな創作・交流の場で開催するオンラインコンベンションです。JMoF
+            2020の企画として実施したことを皮切りに、現在では独立したコンベンションとして毎年開催しています。JMoFの実会場とVR
+            JMoFのオンライン会場をXR技術でシームレスに繫ぐ企画など、先進技術を活用した交流の場を提供することにより、ケモノ文化の拡張や、ひいてはXR周辺技術の発展に寄与することを目的としています。
+          </p>
+          <a href="https://vr.jmof.jp/" target="_blank">
+            <button>VR JMoF公式ウェブサイト</button>
+          </a>
+        </article>
+      </section>
+
+      <!-- our friends -->
+      <section class="friends">
+        <!-- bobble background animation -->
+        <div class="friends_bg">
+          <!-- <div class="bobble_bg"></div> -->
+        </div>
+
+        <!-- friend sites container -->
+        <h3>友情リンク</h3>
+        <p class="sub_title">OUR FRIENDS</p>
+        <div class="container">
+          <!-- top half -->
+          <div class="top">
+            <article class="friend_site light_bg">
+              <div class="region light_bg">アメリカ</div>
+              <div class="friend_about dark_border">
+                <img
+                  class="friend_logo"
+                  src="friend_logos/logo_anthrocon.webp"
+                  alt="Anthrocon Logo"
+                />
+                <p>Anthrocon</p>
+                <p class="addInfo">
+                  ※AnthroconおよびAnthroconロゴは、登録されたAnthrocon,
+                  Inc.のサービスマークです。
+                </p>
+                <a href="https://www.anthrocon.org/" target="_blank">
+                  <button class="friend_link">ウェブサイトを見る</button>
+                </a>
+              </div>
+            </article>
+            <article class="friend_site light_bg">
+              <div class="region light_bg">アルゼンチン</div>
+              <div class="friend_about dark_border">
+                <img
+                  src="friend_logos/logo_arff.webp"
+                  alt="FurFiesta Logo"
+                  class="friend_logo"
+                />
+                <p>Argentina FurFiesta（ArFF）</p>
+                <p class="addInfo"></p>
+                <a href="https://furfiesta.com/" target="_blank">
+                  <button class="friend_link">ウェブサイトを見る</button>
+                </a>
+              </div>
+            </article>
+            <article class="friend_site dark_bg">
+              <div class="region dark_bg">日本</div>
+              <div class="friend_about light_border">
+                <img
+                  src="friend_logos/logo_bick.webp"
+                  alt="Bick Logo"
+                  class="friend_logo"
+                />
+                <p>Beasts in center of Kyusyu（BicK）</p>
+                <p class="addInfo"></p>
+                <a href="https://bick.jp/" target="_blank">
+                  <button class="friend_link">ウェブサイトを見る</button>
+                </a>
+              </div>
+            </article>
+            <article class="friend_site light_bg">
+              <div class="region light_bg">メキシコ</div>
+              <div class="friend_about dark_border">
+                <img
+                  src="friend_logos/logo_confuror.webp"
+                  alt="Confuror Logo"
+                  class="friend_logo"
+                />
+                <p>Confuror</p>
+                <p class="addInfo"></p>
+                <a href="https://confuror.org/" target="_blank">
+                  <button class="friend_link">ウェブサイトを見る</button>
+                </a>
+              </div>
+            </article>
+            <article class="friend_site dark_bg">
+              <div class="region dark_bg">ドイツ</div>
+              <div class="friend_about light_border">
+                <img
+                  src="friend_logos/ef_banner.gif"
+                  alt="Eurofurence Logo"
+                  class="friend_logo"
+                />
+                <p>Eurofurence</p>
+                <p class="addInfo"></p>
+                <a href="https://www.eurofurence.org/EF31/" target="_blank">
+                  <button class="friend_link">ウェブサイトを見る</button>
+                </a>
+              </div>
+            </article>
+            <article class="friend_site light_bg">
+              <div class="region light_bg">オーストラリア</div>
+              <div class="friend_about dark_border">
+                <img
+                  src="friend_logos/logo_furdu.webp"
+                  alt="FurDU Logo"
+                  class="friend_logo"
+                />
+                <p>Furry Down Under（FurDU）</p>
+                <p class="addInfo">
+                  ※参加には年齢制限があります。詳しくは当該ウェブサイトを参照してください。
+                </p>
+                <a href="https://furdu.com.au/" target="_blank">
+                  <button class="friend_link">ウェブサイトを見る</button>
+                </a>
+              </div>
+            </article>
+            <article class="friend_site light_bg">
+              <div class="region light_bg">台湾</div>
+              <div class="friend_about dark_border">
+                <img
+                  src="friend_logos/logo_furryteaparty.webp"
+                  alt="Furry Tea Party Logo"
+                  class="friend_logo"
+                />
+                <p>Furry Tea Party（ケモノお茶会）</p>
+                <p class="addInfo"></p>
+                <a
+                  href="https://www.furryteaparty.com/en/home_en/"
+                  target="_blank"
+                >
+                  <button class="friend_link">ウェブサイトを見る</button>
+                </a>
+              </div>
+            </article>
+            <article class="friend_site light_bg">
+              <div class="region light_bg">アメリカ</div>
+              <div class="friend_about dark_border">
+                <img
+                  src="friend_logos/logo_furcon.webp"
+                  alt="Further Confusion Logo"
+                  class="friend_logo"
+                />
+                <p>Further Confusion</p>
+                <p class="addInfo"></p>
+                <a href="https://furtherconfusion.org/" target="_blank">
+                  <button class="friend_link">ウェブサイトを見る</button>
+                </a>
+              </div>
+            </article>
+            <article class="friend_site light_bg">
+              <div class="region light_bg">日本</div>
+              <div class="friend_about dark_border">
+                <img
+                  src="friend_logos/logo_kemocon.webp"
+                  alt="Kemocon Logo"
+                  class="friend_logo"
+                />
+                <p>Kemocon</p>
+                <p class="addInfo"></p>
+                <a href="https://www.kemocon.com/" target="_blank">
+                  <button class="friend_link">ウェブサイトを見る</button>
+                </a>
+              </div>
+            </article>
+            <article class="friend_site dark_bg">
+              <div class="region dark_bg">スウェーデン</div>
+              <div class="friend_about light_border">
+                <img
+                  src="friend_logos/logo_nfc.webp"
+                  alt="NordicFuzzCon Logo"
+                  class="friend_logo"
+                />
+                <p>NordicFuzzCon</p>
+                <p class="addInfo"></p>
+                <a href="https://nordicfuzzcon.org/" target="_blank">
+                  <button class="friend_link">ウェブサイトを見る</button>
+                </a>
+              </div>
+            </article>
+            <article class="friend_site dark_bg">
+              <div class="region dark_bg">インドネシア</div>
+              <div class="friend_about light_border">
+                <img
+                  src="friend_logos/logo_pawai.webp"
+                  alt="PAWAI Logo"
+                  class="friend_logo"
+                />
+                <p>Party Along With Anthro Indonesia（PAWAI）</p>
+                <p class="addInfo"></p>
+                <a href="https://pawai.id/" target="_blank">
+                  <button class="friend_link">ウェブサイトを見る</button>
+                </a>
+              </div>
+            </article>
+            <article class="friend_site light_bg">
+              <div class="region light_bg">中国</div>
+              <div class="friend_about dark_border">
+                <img
+                  src="friend_logos/logo_sff.webp"
+                  alt="Super Furry Fusion Logo"
+                  class="friend_logo"
+                />
+                <p>Super Furry Fusion（極獣聚）</p>
+                <p class="addInfo"></p>
+                <a href="https://www.furrychina.com/" target="_blank">
+                  <button class="friend_link">ウェブサイトを見る</button>
+                </a>
+              </div>
+            </article>
+            <article class="friend_site light_bg">
+              <div class="region light_bg">台湾</div>
+              <div class="friend_about dark_border">
+                <img
+                  src="friend_logos/logo_utfg.webp"
+                  alt="UFTG Logo"
+                  class="friend_logo"
+                />
+                <p>Unfurgettable Taiwan Furry Gathering（UTFG）</p>
+                <p class="addInfo"></p>
+                <a href="https://www.utfg.tw/" target="_blank">
+                  <button class="friend_link">ウェブサイトを見る</button>
+                </a>
+              </div>
+            </article>
+            <article class="friend_site dark_bg">
+              <div class="region dark_bg">中国</div>
+              <div class="friend_about light_border">
+                <img
+                  src="friend_logos/logo_wff.webp"
+                  alt="Winter Furry Fusion Logo"
+                  class="friend_logo"
+                />
+                <p>Winter Furry Fusion（冬獣聚）</p>
+                <p class="addInfo"></p>
+                <a href="https://www.furrychina.com/" target="_blank">
+                  <button class="friend_link">ウェブサイトを見る</button>
+                </a>
+              </div>
+            </article>
+            <article class="friend_site light_bg">
+              <div class="region light_bg">韓国</div>
+              <div class="friend_about dark_border">
+                <img
+                  src="friend_logos/logo_howlsoup_26.webp"
+                  alt="Howlsoup Logo"
+                  class="friend_logo"
+                />
+                <p>Howlsoup（ハウルスープ）</p>
+                <p class="addInfo"></p>
+                <a href="https://howlsoup.kr/" target="_blank">
+                  <button class="friend_link">ウェブサイトを見る</button>
+                </a>
+              </div>
+            </article>
+          </div>
+
+          <!-- bottom half -->
+          <div class="bottom">
+            <article class="friend_site light_bg">
+              <div class="region light_bg">アメリカ</div>
+              <div class="friend_about dark_border">
+                <img
+                  src="friend_logos/logo_ane.webp"
+                  alt="Anthro New England Logo"
+                  class="friend_logo"
+                />
+                <p>Anthro New England</p>
+                <p class="addInfo"></p>
+                <a href="https://www.anthronewengland.com/" target="_blank">
+                  <button class="friend_link">ウェブサイトを見る</button>
+                </a>
+              </div>
+            </article>
+            <article class="friend_site light_bg">
+              <div class="region light_bg">タイ</div>
+              <div class="friend_about dark_border">
+                <img
+                  src="friend_logos/logo_bangkokbeasts.webp"
+                  alt="BangkokBeasts Logo"
+                  class="friend_logo"
+                />
+                <p>BangkokBeasts</p>
+                <p class="addInfo"></p>
+                <a href="https://bangkokbeasts.com/2026/" target="_blank">
+                  <button class="friend_link">ウェブサイトを見る</button>
+                </a>
+              </div>
+            </article>
+            <article class="friend_site dark_bg">
+              <div class="region dark_bg">ブラジル</div>
+              <div class="friend_about light_border">
+                <img
+                  src="friend_logos/logo_bff.webp"
+                  alt="Brasil Furfest Logo"
+                  class="friend_logo"
+                />
+                <p>Brasil FurFest</p>
+                <p class="addInfo"></p>
+                <a href="https://brasilfurfest.com.br/" target="_blank">
+                  <button class="friend_link">ウェブサイトを見る</button>
+                </a>
+              </div>
+            </article>
+            <article class="friend_site light_bg">
+              <div class="region light_bg">アメリカ</div>
+              <div class="friend_about dark_border">
+                <img
+                  src="friend_logos/logo_eufuria.webp"
+                  alt="Eufuria Logo"
+                  class="friend_logo"
+                />
+                <p>Eufuria</p>
+                <p class="addInfo">
+                  ※参加には年齢制限があります。詳しくは当該ウェブサイトを参照してください。
+                </p>
+                <a href="https://eufuria.org/" target="_blank">
+                  <button class="friend_link">ウェブサイトを見る</button>
+                </a>
+              </div>
+            </article>
+            <article class="friend_site dark_bg">
+              <div class="region dark_bg">オンライン</div>
+              <div class="friend_about light_border">
+                <img
+                  src="friend_logos/logo_furality.webp"
+                  alt="Furality Logo"
+                  class="friend_logo"
+                />
+                <p>Furality Online Xperience</p>
+                <p class="addInfo"></p>
+                <a href="https://furality.org/" target="_blank">
+                  <button class="friend_link">ウェブサイトを見る</button>
+                </a>
+              </div>
+            </article>
+            <article class="friend_site dark_bg">
+              <div class="region dark_bg">韓国</div>
+              <div class="friend_about light_border">
+                <img
+                  src="friend_logos/logo_furryjoa.webp"
+                  alt="FurryJoA Logo"
+                  class="friend_logo"
+                />
+                <p>Furry Joining of Asia（Furry JoA）</p>
+                <p class="addInfo"></p>
+                <a href="https://furryjoa.com/" target="_blank">
+                  <button class="friend_link">ウェブサイトを見る</button>
+                </a>
+              </div>
+            </article>
+            <article class="friend_site dark_bg">
+              <div class="region dark_bg">マレーシア</div>
+              <div class="friend_about light_border">
+                <img
+                  src="friend_logos/logo_furum.webp"
+                  alt="FURUM Logo"
+                  class="friend_logo"
+                />
+                <p>Furs Upon Malaysia（FURUM）</p>
+                <p class="addInfo"></p>
+                <a href="https://www.furum.org/2026" target="_blank">
+                  <button class="friend_link">ウェブサイトを見る</button>
+                </a>
+              </div>
+            </article>
+            <article class="friend_site dark_bg">
+              <div class="region dark_bg">台湾</div>
+              <div class="friend_about light_border">
+                <img
+                  src="friend_logos/logo_infurnity.webp"
+                  alt="Infurnity Logo"
+                  class="friend_logo"
+                />
+                <p>Infurnity（獣無限）</p>
+                <p class="addInfo"></p>
+                <a href="https://www.infurnity.com/en/" target="_blank">
+                  <button class="friend_link">ウェブサイトを見る</button>
+                </a>
+              </div>
+            </article>
+            <article class="friend_site light_bg">
+              <div class="region light_bg">日本</div>
+              <div class="friend_about dark_border">
+                <img
+                  src="friend_logos/logo_kemoket.webp"
+                  alt="Kemoket Logo"
+                  class="friend_logo"
+                />
+                <p>けもケット</p>
+                <p class="addInfo"></p>
+                <a href="https://skypalette.jp/kemoket/" target="_blank">
+                  <button class="friend_link">ウェブサイトを見る</button>
+                </a>
+              </div>
+            </article>
+            <article class="friend_site light_bg">
+              <div class="region light_bg">日本</div>
+              <div class="friend_about dark_border">
+                <img
+                  src="friend_logos/logo_okikemo.webp"
+                  alt="Okikemo Logo"
+                  class="friend_logo"
+                />
+                <p>おきけも！</p>
+                <p class="addInfo"></p>
+                <a href="https://x.com/OkikemoOkinawa" target="_blank">
+                  <button class="friend_link">ウェブサイトを見る</button>
+                </a>
+              </div>
+            </article>
+            <article class="friend_site light_bg">
+              <div class="region light_bg">オンライン</div>
+              <div class="friend_about dark_border">
+                <img
+                  src="friend_logos/logo_silverfangcon.webp"
+                  alt="Silver Fang Con Logo"
+                  class="friend_logo"
+                />
+                <p>Silver Fang Con</p>
+                <p class="addInfo"></p>
+                <a href="https://con.silverfang.net/" target="_blank">
+                  <button class="friend_link">ウェブサイトを見る</button>
+                </a>
+              </div>
+            </article>
+            <article class="friend_site light_bg">
+              <div class="region light_bg">タイ</div>
+              <div class="friend_about dark_border">
+                <img
+                  src="friend_logos/logo_thaitails.webp"
+                  alt="ThaiTails Logo"
+                  class="friend_logo"
+                />
+                <p>ThaiTails</p>
+                <p class="addInfo"></p>
+                <a href="https://2026.thaitails.net/" target="_blank">
+                  <button class="friend_link">ウェブサイトを見る</button>
+                </a>
+              </div>
+            </article>
+            <article class="friend_site dark_bg">
+              <div class="region dark_bg">オーストラリア</div>
+              <div class="friend_about light_border">
+                <img
+                  src="friend_logos/logo_waff.webp"
+                  alt="WAFF Logo"
+                  class="friend_logo"
+                />
+                <p>West Aussie Fur Frenzy（WAFF）</p>
+                <p class="addInfo">
+                  ※参加には年齢制限があります。詳しくは当該ウェブサイトを参照してください。
+                </p>
+                <a href="https://waff.net.au/" target="_blank">
+                  <button class="friend_link">ウェブサイトを見る</button>
+                </a>
+              </div>
+            </article>
+            <article class="friend_site dark_bg">
+              <div class="region dark_bg">チリ</div>
+              <div class="friend_about light_border">
+                <img
+                  src="friend_logos/logo_wuff.webp"
+                  alt="WUFF Logo"
+                  class="friend_logo"
+                />
+                <p>Wüellas FurFest</p>
+                <p class="addInfo"></p>
+                <a href="https://www.wuff.cl/" target="_blank">
+                  <button class="friend_link">ウェブサイトを見る</button>
+                </a>
+              </div>
+            </article>
+            <article class="friend_site dark_bg">
+              <div class="region dark_bg">シンガポール</div>
+              <div class="friend_about light_border">
+                <img
+                  src="friend_logos/logo_lifc.webp"
+                  alt="LIFC Logo"
+                  class="friend_logo"
+                />
+                <p>Little Island Furcon（LIFC）</p>
+                <p class="addInfo"></p>
+                <a href="https://www.littleislandfur.com/" target="_blank">
+                  <button class="friend_link">ウェブサイトを見る</button>
+                </a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- footer -->
+    <footer>
+      <!-- footer top -->
+      <div class="top">
+        <div>
+          <img src="JMoF-logo-dark.svg" alt="JMoF Logo" />
+          <div class="info">
+            <p>JMoF 2027 - ロスト・イン・トランジット －セントレア漂流記－</p>
+            <p>2027年1月8日（金）〜10日（日）</p>
+            <p>Aichi Sky Expo／愛知県国際展示場（愛知県常滑市）</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- footer mid -->
+      <div class="mid">
+        <!-- extern links -->
+        <div class="extern_link">
+          <!-- social links -->
+          <div>
+            <h2>JMoF公式ソーシャルメディア</h2>
+            <ul class="social">
+              <li>
+                <a href="https://bsky.app/profile/jmof.jp" target="_blank">
+                  <img src="social_media_logos/Bluesky_Logo.svg" alt="bsky" />
+                </a>
+              </li>
+              <li>
+                <a href="https://x.com/JMoF_PR" target="_blank">
+                  <img
+                    src="social_media_logos/X_logo_2023.svg"
+                    alt="x (twitter)"
+                  />
+                </a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/c/JMoF_PR" target="_blank">
+                  <img
+                    src="social_media_logos/Youtube_logo.png"
+                    alt="youtube"
+                  />
+                </a>
+              </li>
+              <li>
+                <a href="https://t.me/jmof_official" target="_blank">
+                  <img
+                    src="social_media_logos/Telegram_2019_Logo.svg"
+                    alt="telegram"
+                  />
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.flickr.com/photos/jmof_archive/albums/"
+                  target="_blank"
+                >
+                  <img
+                    src="social_media_logos/flickr-svgrepo-com.svg"
+                    alt="flickr"
+                  />
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- app links -->
+          <div>
+            <h2>JMoFアプリ</h2>
+            <ul class="apps">
+              <li>
+                <a
+                  class="app_info"
+                  href="https://app.jmof.jp/index.html"
+                  target="_blank"
+                >
+                  特設サイト
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://apps.apple.com/jp/app/jmof-app/id6463477916"
+                  target="_blank"
+                >
+                  <img src="apps_logos/appstore-badge.svg" alt="app store" />
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://play.google.com/store/apps/details?id=jp.jmof.app.unity.android"
+                  target="_blank"
+                >
+                  <img
+                    src="apps_logos/googleplay-badge.webp"
+                    alt="play store"
+                  />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- inner links -->
+        <div class="inner_link"></div>
+      </div>
+
+      <!-- footer bottom -->
+      <div class="bottom"></div>
+    </footer>
+  </body>
+</html>

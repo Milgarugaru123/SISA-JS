@@ -1,0 +1,61 @@
+.login {
+  width: 300px;
+  height: auto;
+  margin: 30px auto;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+.login div {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+input {
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  width: 100%;
+  font-size: 20px;
+  padding: 10px 12px;
+}
+
+.input_err {
+  border: 1px solid red;
+}
+
+.err {
+  color: red;
+  font-size: 12px;
+  margin: 5px 0 10px;
+  opacity: 0;
+}
+
+.err_show {
+  opacity: 1;
+}
+
+#agree {
+  width: fit-content;
+  margin: 0;
+}
+
+span {
+  padding-left: 5px;
+}
+
+.loginBtn {
+  color: white;
+  font-size: 18px;
+  border: none;
+  border-radius: 10px;
+  background-color: black;
+  width: 100%;
+  padding: 10px 0;
+}
+
+.loginBtn:hover {
+  background-color: rgb(65, 65, 65);
+  cursor: pointer;
+}

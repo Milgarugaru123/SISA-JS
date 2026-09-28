@@ -1,0 +1,67 @@
+.about {
+  width: 100%;
+  height: auto;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-image: url("JMF_about.webp");
+  background-size: cover;
+  background-position-x: 50%;
+  position: relative;
+  z-index: 0;
+}
+
+.about .top_shadow {
+  width: 100%;
+  height: 10vw;
+  clip-path: polygon(0 0, 100% 0, 50% 100%);
+  background-color: #1a1c20;
+}
+
+.about .main_about {
+  color: white;
+  font-weight: 500;
+  width: 100%;
+  max-width: 800px;
+  height: fit-content;
+  text-align: center;
+  line-height: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 18px;
+  gap: 32px;
+  margin: 200px auto;
+}
+
+.main_about .about_logo {
+  /* width: 30%; */
+  width: 40%;
+  max-width: 800px;
+  height: auto;
+  margin-bottom: 64px;
+}
+
+.main_about button {
+  font-size: 16px;
+  font-weight: bold;
+  border: 1px solid white;
+  border-radius: 4px;
+  background-color: #ffffff1a;
+  backdrop-filter: blur(10px);
+  padding: 10px 20px;
+  margin-top: 64px;
+}
+
+.about .bottom_blank {
+  width: 100%;
+  height: 10vw;
+}
+
+.about .shadow {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8));
+  z-index: -1;
+}

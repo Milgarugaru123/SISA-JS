@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo List</title>
+    <!-- <script type="text/javascript" src="./todoData.json"></script> -->
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./main.css" />
+    <link rel="stylesheet" href="./todoList.css" />
+    <script type="module" src="./index.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <section class="todo_list">
+        <div class="date">temp date</div>
+        <h2 class="title">오늘 할 일</h2>
+        <div class="progress">
+          <label for="works_done">temp label</label>
+          <progress id="works_done"></progress>
+        </div>
+        <form class="input" onsubmit="return false;">
+          <input type="text" class="todo" placeholder="할 일을 적고 Enter" />
+          <button class="add_todo add_todo_inactive">추가</button>
+        </form>
+        <ul class="dist">
+          <div class="active active_all"></div>
+          <li class="li_active">전체</li>
+          <li class="li_inactive">남은 일</li>
+          <li class="li_inactive">끝낸 일</li>
+        </ul>
+        <article class="todo_works">
+          <div class="no_works no_works_inactive">
+            <div class="no_works_desc">temp</div>
+            <div class="no_works_sub">sub temp</div>
+          </div>
+          <!-- <div class="work_one work_one_active">
+            <label class="work">
+              <input type="checkbox" />
+              <div class="work_desc">temp work</div>
+            </label>
+            <div class="delete_one">✕</div>
+          </div> -->
+        </article>
+        <div class="bottom">
+          <button class="delete_all delete_all_inactive">끝낸 일 지우기</button>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

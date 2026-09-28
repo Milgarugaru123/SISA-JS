@@ -1,0 +1,15 @@
+.init_hidden {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+#chevron {
+  transition: all 0.3s;
+}
+
+.upDown {
+  transform: rotate(-180deg);
+}

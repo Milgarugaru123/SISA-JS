@@ -1,0 +1,37 @@
+.out_box {
+  box-sizing: border-box;
+  /* width: fit-content; */
+  width: 400px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+}
+
+.in_box {
+  border-left: 4px solid transparent;
+  border-radius: 5px;
+  box-sizing: border-box;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  width: 100%;
+  height: fit-content;
+  display: flex;
+}
+
+.date {
+  box-sizing: border-box;
+  flex: 3;
+  /* width: 120px; */
+  padding: 15px 0;
+  border: 2px solid rgba(228, 228, 228, 0.5);
+}
+
+.schedule {
+  box-sizing: border-box;
+  flex: 7;
+  /* width: 240px; */
+  padding: 15px 0;
+  border: 2px solid rgba(228, 228, 228, 0.5);
+}

@@ -1,0 +1,72 @@
+:root {
+  --max-w: 1280px;
+  --pad-max-w: 768px; /* 원래 사이트는 800px 기준임 */
+  --color-main: rgb(0, 30, 67);
+}
+
+* {
+  font-family:
+    "Inter", "Inter Fallback", "Noto Sans JP", "Noto Sans JP Fallback",
+    "Noto Sans", "Noto Sans JP", "Noto Sans TC", "Noto Sans SC", "Noto Sans KR",
+    sans-serif !important;
+}
+
+button {
+  color: white;
+  font-size: 16px;
+  transition: all 0.3s;
+  opacity: 1;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.5;
+}
+
+a {
+  display: inline;
+  color: rgb(0, 86, 179);
+  text-decoration-color: rgb(0, 86, 179);
+}
+
+.cookie_announce {
+  width: 100%;
+  height: auto;
+  max-height: 30vh;
+  background-color: rgb(255, 255, 249);
+  display: flex;
+  justify-content: space-between;
+  position: Fixed;
+  bottom: 0;
+  z-index: 9;
+}
+
+.cookie_announce .desc {
+  width: 100%;
+  color: var(--color-main);
+  font-size: 16px;
+  line-height: 1.5em;
+  text-align: center;
+  margin: 15px;
+}
+
+.cookie_announce .agree_btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 20px 15px;
+}
+
+.cookie_announce .agree_btn button {
+  color: white;
+  border-radius: 6px;
+  background-color: rgb(18, 116, 230);
+  padding: 12px 24px;
+  white-space: nowrap;
+  transition: none;
+}
+
+.cookie_announce .agree_btn button:hover {
+  background-color: rgb(2, 77, 141);
+  opacity: 1;
+}

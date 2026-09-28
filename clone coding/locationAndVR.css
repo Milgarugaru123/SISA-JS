@@ -1,0 +1,64 @@
+.location,
+.vrJMoF {
+  width: 100%;
+  height: auto;
+  padding: 200px 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  margin: 0 auto;
+}
+
+.location {
+  background-color: rgb(0, 14, 45);
+}
+
+.vrJMoF {
+  background-color: rgb(52, 0, 45);
+}
+.location div,
+.vrJMoF div {
+  width: 100%;
+  min-width: 500px;
+  max-width: 560px;
+  height: fit-content;
+  margin: auto 0;
+}
+
+.location img,
+.vrJMoF img {
+  aspect-ratio: 4/3;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.location article,
+.vrJMoF article {
+  width: 100%;
+  min-width: 320px;
+  max-width: 400px;
+  height: auto;
+  letter-spacing: 2%;
+  line-height: 1.5;
+  margin: auto 0;
+}
+
+.vrJMoF .desc {
+  color: white;
+  font-size: 0.875rem;
+  line-height: 2rem;
+  margin-bottom: 20px;
+}
+
+.vrJMoF button {
+  font-size: 18px;
+  font-weight: bold;
+  border: 1px solid white;
+  border-radius: 4px;
+  background-color: transparent;
+  backdrop-filter: blur(10px);
+  padding: 10px 20px;
+  margin-top: 16px;
+}
