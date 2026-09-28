@@ -119,6 +119,16 @@ footer .mid .inner_link {
   padding-top: 64px;
 }
 
+footer .inner_link .link_btn {
+  color: #001e43;
+  text-decoration-line: none;
+}
+
+footer .inner_link .link_btn:hover {
+  text-decoration-color: #001e43;
+  text-decoration-line: underline;
+}
+
 footer .bottom {
   padding: 32px 48px;
 }

@@ -98,8 +98,19 @@ inner_link_data.forEach((partition, i) => {
     part2pack.push(inner.querySelector(`.inner_${(i + 1) / 2}`));
   }
 
+  const inner_part = document.createElement(`div`);
+  part2pack[0].appendChild(inner_part);
+
   const label = document.createElement(`h2`);
   label.innerHTML = partition.label;
+  inner_part.appendChild(label);
 
-  part2pack[0].appendChild();
+  partition.buttons.forEach((x, i) => {
+    const link_btn = document.createElement(`a`);
+    link_btn.classList.add(`link_btn`);
+    link_btn.insertAdjacentHTML(`afterbegin`, x);
+    link_btn.href = partition.links[i];
+    link_btn.target = `_blank`;
+    inner_part.appendChild(link_btn);
+  });
 });
