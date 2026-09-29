@@ -117,11 +117,32 @@ footer .mid .extern_link .apps .app_info {
 
 footer .mid .inner_link {
   padding-top: 64px;
+  display: flex;
+  flex-flow: row wrap;
+  gap: 48px;
+}
+
+footer .inner_link > div {
+  min-width: 450px;
+  flex: 1;
+  display: flex;
+  flex-flow: row wrap;
+  gap: 48px;
+}
+
+footer .inner_link > div > div {
+  min-width: 200px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  /* gap: 18px; */
 }
 
 footer .inner_link .link_btn {
+  width: fit-content;
   color: #001e43;
   text-decoration-line: none;
+  margin: 12px 0;
 }
 
 footer .inner_link .link_btn:hover {
@@ -130,5 +151,31 @@ footer .inner_link .link_btn:hover {
 }
 
 footer .bottom {
+  max-width: 100%;
+  color: white;
+  background-color: #001e43;
   padding: 32px 48px;
+  bottom: 0;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 5rem;
+}
+
+footer .bottom ul {
+  display: flex;
+  justify-content: start;
+  gap: 4rem;
+}
+
+footer .bottom a {
+  color: white;
+  text-decoration-color: transparent;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+footer .bottom a:hover {
+  text-decoration-color: white;
 }
