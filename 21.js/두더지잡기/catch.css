@@ -1,0 +1,88 @@
+main {
+  width: 100%;
+  max-width: 400px;
+  height: fit-content;
+  border-radius: 12px;
+  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 20px;
+  margin: 30px auto 0;
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+
+h1 {
+  font-size: 20px;
+  margin: 0;
+}
+
+.info {
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  gap: 8px;
+  padding: 8px;
+}
+
+.info > div {
+  width: fit-content;
+  border-radius: 100px;
+  background-color: rgb(235, 235, 235);
+  padding: 2px 8px;
+}
+
+.info span {
+  font-weight: bold;
+}
+
+.game {
+  box-sizing: border-box;
+  width: 100%;
+  aspect-ratio: 1/1;
+  background-color: rgb(200, 245, 215);
+  border-radius: 12px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  padding: 16px;
+}
+
+.hole {
+  border-radius: 100%;
+  background-color: #6b4423;
+  box-shadow: inset 0 8px 2px 0 rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+}
+
+.desc {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.05rem;
+}
+
+.play_btn {
+  border: none;
+  background-color: orange;
+  border-radius: 12px;
+  padding: 12px;
+}
+
+.cursor_avail {
+  cursor: pointer;
+}
+
+.cursor_inavail {
+  cursor: not-allowed;
+}
+
+.cursor_none {
+  pointer-events: none;
+}
