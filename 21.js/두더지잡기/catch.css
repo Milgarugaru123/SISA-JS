@@ -3,7 +3,7 @@ main {
   max-width: 400px;
   height: fit-content;
   border-radius: 12px;
-  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
   display: flex;
   flex-direction: column;
   gap: 12px;
@@ -31,11 +31,22 @@ h1 {
   padding: 8px;
 }
 
-.info > div {
+.scores {
+  display: flex;
+  gap: 8px;
+}
+
+.timer,
+.highscore,
+.score {
   width: fit-content;
   border-radius: 100px;
   background-color: rgb(235, 235, 235);
   padding: 2px 8px;
+}
+
+.hidden {
+  display: none;
 }
 
 .info span {
@@ -61,6 +72,10 @@ h1 {
   overflow: hidden;
 }
 
+.mole_hide {
+  transform: translateY(150%);
+}
+
 .desc {
   text-align: center;
   font-size: 14px;
@@ -69,8 +84,11 @@ h1 {
 }
 
 .play_btn {
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
   border: none;
-  background-color: orange;
+  background-color: #16a34a;
   border-radius: 12px;
   padding: 12px;
 }
@@ -80,6 +98,7 @@ h1 {
 }
 
 .cursor_inavail {
+  opacity: 0.4;
   cursor: not-allowed;
 }
 
