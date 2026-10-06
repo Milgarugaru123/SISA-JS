@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo</title>
+    <script src="index.js" defer></script>
+  </head>
+  <body>
+    <div class="buttons" style="display: flex; gap: 10px">
+      <form onsubmit="return false;">
+        <input type="text" placeholder="할 일" />
+        <button class="add">추가</button>
+      </form>
+      <button class="remove">전체 삭제</button>
+    </div>
+    <ul class="list"></ul>
+  </body>
+</html>

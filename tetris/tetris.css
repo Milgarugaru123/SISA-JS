@@ -1,0 +1,144 @@
+/* 테트리미노 디자인 */
+.tetrimino {
+  transition: none;
+}
+
+.o_mino {
+}
+
+.i_mino {
+}
+
+.s_mino {
+}
+
+.z_mino {
+}
+
+.l_mino {
+}
+
+.j_mino {
+}
+
+.t_mino {
+}
+
+/* 배경 디자인 */
+main {
+  width: 100vw;
+  height: 100vh;
+  background-color: gray;
+  padding: 5lvh 5lvw;
+  margin: 0;
+}
+
+.game_ground {
+  width: 100%;
+  max-width: 1280px;
+  height: 100%;
+  /* border: 1px solid black; */
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 1lvw;
+  margin: 0 auto;
+}
+
+.blank {
+  width: 30%;
+  min-width: 0px;
+  max-width: 400px;
+  /* border: 1px solid black; */
+}
+
+.game {
+  width: 100%;
+  min-width: 400px;
+  max-width: 500px;
+  height: 100%;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  position: relative;
+}
+
+.hold_mino {
+  color: white;
+  width: 25%;
+  height: calc((90% / 6) * 0.8);
+  border: 5px solid white;
+  border-radius: 20px;
+  text-align: center;
+  background-color: black;
+  position: absolute;
+  top: calc((90% / 6) * 0.1);
+  padding: 5px;
+  z-index: 1;
+}
+
+.main_board {
+  height: 90%;
+  aspect-ratio: 10 / 24;
+  /* border: 1px solid black; */
+  border-radius: 30px 30px 0 0;
+  background-color: rgba(255, 255, 255, 0.5);
+  position: relative;
+}
+
+.main_board::before {
+  content: "";
+  width: 100%;
+  height: calc(100% / 6 + 10px);
+  border-radius: 30px 30px 0 0;
+  background: linear-gradient(rgb(3, 202, 186), transparent);
+  display: block;
+  position: relative;
+}
+
+.main_board::after {
+  content: "";
+  width: 100%;
+  height: 30px;
+  background-color: black;
+  position: absolute;
+  bottom: -30px;
+}
+
+.board_wing {
+  width: 7%;
+  min-width: 30px;
+  height: calc(90% - 90% / 6 + 30px);
+  background-color: black;
+  position: relative;
+  top: calc(90% / 6);
+}
+
+.left_wing {
+  border-radius: 30px 0 0 30px;
+}
+
+.right_wing {
+  border-radius: 0 30px 30px 0;
+}
+
+.infos {
+  width: 30%;
+  min-width: 200px;
+  max-width: 400px;
+  height: 100%;
+  /* border: 1px solid black; */
+}
+
+.next_minos {
+}
+
+.next_mino {
+}
+
+.further_next {
+}
+
+.score_board {
+}
