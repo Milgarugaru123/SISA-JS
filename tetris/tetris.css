@@ -66,11 +66,13 @@ main {
 
 .hold_mino {
   color: white;
+  font-size: 16px;
   width: 25%;
   height: calc((90% / 6) * 0.8);
   border: 5px solid white;
   border-radius: 20px;
   text-align: center;
+  letter-spacing: 0.2em;
   background-color: black;
   position: absolute;
   top: calc((90% / 6) * 0.1);
@@ -128,16 +130,40 @@ main {
   min-width: 200px;
   max-width: 400px;
   height: 100%;
-  /* border: 1px solid black; */
+  border: 1px solid black;
+  position: relative;
 }
 
 .next_minos {
+  width: 50%;
+  min-width: fit-content;
+  border: 1px solid black;
 }
 
 .next_mino {
+  color: white;
+  font-size: 16px;
+  width: 120px;
+  aspect-ratio: 4 / 3;
+  border: 5px solid white;
+  border-radius: 20px;
+  text-align: center;
+  letter-spacing: 0.2em;
+  background-color: black;
+  padding: 5px;
 }
 
 .further_next {
+  color: white;
+  font-size: 16px;
+  width: 25%;
+  aspect-ratio: 4 / 3;
+  border: 5px solid white;
+  border-radius: 20px;
+  text-align: center;
+  letter-spacing: 0.2em;
+  background-color: black;
+  padding: 5px;
 }
 
 .score_board {
