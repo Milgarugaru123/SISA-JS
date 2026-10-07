@@ -114,5 +114,17 @@ export const makeMinoBag = () => {
 };
 
 export const minoBag = makeMinoBag();
+export const refillBag = () => {
+  if (minoBag.length > 7) return;
+  minoBag.push(...makeMinoBag());
+};
 
-console.log(minoDatas, makeMino, gridDatas, hold, makeMinoBag, minoBag);
+console.log(
+  minoDatas,
+  makeMino,
+  gridDatas,
+  hold,
+  makeMinoBag,
+  minoBag,
+  refillBag,
+);

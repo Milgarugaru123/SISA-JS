@@ -6,6 +6,7 @@ import {
   hold,
   makeMinoBag,
   minoBag,
+  refillBag,
 } from "./mino_datas.js";
 import "./game.js";
 import "./query.js";
@@ -13,8 +14,8 @@ import "./mino_datas.js";
 
 /* init */
 
+refillBag();
 nextCase.appendChild(minoBag[0]);
-
 Array(4)
   .fill(0)
   .forEach((x, i) => {
@@ -24,4 +25,6 @@ Array(4)
     furtherNextMino.append(minoBag[i + 1]);
   });
 
-// furtherNextCase.appendChild();
+// minoBag.forEach((x) => {
+//   console.log(x);
+// });

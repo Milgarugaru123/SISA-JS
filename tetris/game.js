@@ -6,4 +6,5 @@ import {
   hold,
   makeMinoBag,
   minoBag,
+  refillBag,
 } from "./mino_datas.js";
