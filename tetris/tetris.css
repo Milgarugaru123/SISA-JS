@@ -1,34 +1,63 @@
 /* 테트리미노 디자인 */
+
+/* .tetris_board {
+  width: 100%;
+  height: calc(100% - 100% / 6);
+  position: relative;
+  top: -10px;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+} */
+
+.grid_unit {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+}
+
 .tetrimino {
   transition: none;
 }
 
-.o_mino {
+.i_mino {
+  border: 2px solid rgb(36, 106, 128);
+  background-color: rgb(37, 183, 228);
 }
 
-.i_mino {
+.o_mino {
+  border: 2px solid rgb(255, 253, 130);
+  background-color: rgb(219, 216, 38);
 }
 
 .s_mino {
+  border: 2px solid rgb(64, 128, 28);
+  background-color: rgb(122, 228, 61);
 }
 
 .z_mino {
+  border: 2px solid rgb(156, 23, 41);
+  background-color: rgb(216, 63, 83);
 }
 
 .l_mino {
+  border: 2px solid rgb(160, 95, 16);
+  background-color: rgb(255, 153, 21);
 }
 
 .j_mino {
+  border: 2px solid rgb(30, 60, 141);
+  background-color: rgb(22, 84, 255);
 }
 
 .t_mino {
+  border: 2px solid rgb(97, 26, 129);
+  background-color: rgb(161, 34, 219);
 }
 
 /* 배경 디자인 */
 main {
   width: 100vw;
   height: 100vh;
-  background-color: gray;
+  background-color: rgb(106, 99, 124);
   padding: 5lvh 5lvw;
   margin: 0;
 }
@@ -43,6 +72,7 @@ main {
   align-items: center;
   gap: 1lvw;
   margin: 0 auto;
+  /* pointer-events: none; */
 }
 
 .blank {
@@ -57,7 +87,7 @@ main {
   min-width: 400px;
   max-width: 500px;
   height: 100%;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   display: flex;
   justify-content: center;
   align-items: start;
@@ -67,17 +97,29 @@ main {
 .hold_mino {
   color: white;
   font-size: 16px;
-  width: 25%;
   height: calc((90% / 6) * 0.8);
+  aspect-ratio: 4 / 3;
   border: 5px solid white;
   border-radius: 20px;
-  text-align: center;
   letter-spacing: 0.2em;
   background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
   position: absolute;
   top: calc((90% / 6) * 0.1);
   padding: 5px;
+  gap: 5px;
   z-index: 1;
+}
+
+.mino_case {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .main_board {
@@ -85,7 +127,7 @@ main {
   aspect-ratio: 10 / 24;
   /* border: 1px solid black; */
   border-radius: 30px 30px 0 0;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(0, 0, 0, 0.3);
   position: relative;
 }
 
@@ -125,46 +167,111 @@ main {
   border-radius: 0 30px 30px 0;
 }
 
+.tetris_board {
+  width: 100%;
+  height: calc(100% - 100% / 6);
+  position: relative;
+  top: -10px;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+}
+
+.tetris_board > .temp {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border: 2px solid gray;
+}
+
+.tetris_board > .temp:nth-child(124) {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border: 2px solid rgb(97, 26, 129);
+  background-color: rgb(161, 34, 219);
+}
+
 .infos {
   width: 30%;
   min-width: 200px;
   max-width: 400px;
   height: 100%;
-  border: 1px solid black;
-  position: relative;
+  /* border: 1px solid black; */
 }
 
 .next_minos {
-  width: 50%;
+  width: 40%;
   min-width: fit-content;
-  border: 1px solid black;
+  height: 60%;
+  /* border: 1px solid black; */
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: 3lvh;
+}
+
+.leftshift_container {
+  width: 100%;
+  height: 22%;
 }
 
 .next_mino {
   color: white;
   font-size: 16px;
-  width: 120px;
+  height: 100%;
   aspect-ratio: 4 / 3;
   border: 5px solid white;
   border-radius: 20px;
-  text-align: center;
   letter-spacing: 0.2em;
   background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
   padding: 5px;
+  gap: 5px;
+}
+
+.rightshift_container {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: end;
 }
 
 .further_next {
   color: white;
-  font-size: 16px;
-  width: 25%;
-  aspect-ratio: 4 / 3;
+  width: 13lvh;
+  height: fit-content;
   border: 5px solid white;
   border-radius: 20px;
-  text-align: center;
-  letter-spacing: 0.2em;
   background-color: black;
   padding: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  gap: 5px;
+}
+
+.further_next_mino {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .score_board {
+  color: black;
+  font-size: 16px;
+  width: 80%;
+  min-width: 200px;
+  height: fit-content;
+  border: 5px solid rgb(3, 202, 186);
+  border-radius: 20px;
+  text-align: center;
+  letter-spacing: 0.2em;
+  background-color: white;
+  padding: 5px;
 }

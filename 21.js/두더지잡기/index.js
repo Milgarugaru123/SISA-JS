@@ -83,6 +83,7 @@ const gameEnd = () => {
   clearTimeout(playData.moleIntervalID);
   clearTimeout(playData.descIntervalID);
   holes.forEach((hole) => {
+    hole.classList.remove(`cursor_avail`);
     hole.querySelector(`img`).classList.add(`mole_hide`);
   });
   desc.innerHTML = `끝! ${playData.score} 마리 잡았다!`;
