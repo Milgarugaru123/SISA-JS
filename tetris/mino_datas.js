@@ -90,30 +90,27 @@ export const makeMino = (minoName) => {
 };
 
 export const gridDatas = new Array(20).fill(0).map((row) => {
-  const newRow = [];
-  Array(10)
+  return Array(10)
     .fill(0)
     .map((grid) => {
       const gridUnit = document.createElement(`div`);
       gridUnit.classList.add(`grid_unit`);
       tetrisScreen.appendChild(gridUnit);
-      newRow.push(gridUnit);
+      return gridUnit;
     });
-  return newRow;
 });
 
-export const hold = { isHold: false, mino: undefined };
-
-export const makeMinoBag = () => {
+const makeMinoBag = () => {
   const bag = Array(minoDatas.length)
     .fill(0)
     .map((x, i) => {
-      return makeMino(minoDatas[i].name);
+      return minoDatas[i].name;
     });
   return bag.sort(() => Math.random() - 0.5);
 };
 
-export const minoBag = makeMinoBag();
+export const minoBag = [];
+
 export const refillBag = () => {
   if (minoBag.length > 7) return;
   minoBag.push(...makeMinoBag());
@@ -121,10 +118,8 @@ export const refillBag = () => {
 
 console.log(
   minoDatas,
-  makeMino,
+  // makeMino,
   gridDatas,
-  hold,
-  makeMinoBag,
   minoBag,
-  refillBag,
+  // refillBag,
 );

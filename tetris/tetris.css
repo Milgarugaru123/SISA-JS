@@ -19,13 +19,13 @@
 }
 
 .i_mino {
-  border: 2px solid rgb(36, 106, 128);
-  background-color: rgb(37, 183, 228);
+  border: 2px solid rgb(34, 123, 150);
+  background-color: rgb(69, 202, 243);
 }
 
 .o_mino {
-  border: 2px solid rgb(255, 253, 130);
-  background-color: rgb(219, 216, 38);
+  border: 2px solid rgb(207, 205, 39);
+  background-color: rgb(255, 252, 52);
 }
 
 .s_mino {
@@ -92,6 +92,7 @@ main {
   justify-content: center;
   align-items: start;
   position: relative;
+  pointer-events: none;
 }
 
 .hold_mino {
@@ -117,6 +118,7 @@ main {
 .mino_case {
   width: 100%;
   height: 100%;
+  font-size: 12px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -195,6 +197,7 @@ main {
   max-width: 400px;
   height: 100%;
   /* border: 1px solid black; */
+  /* pointer-events: none; */
 }
 
 .next_minos {
@@ -206,6 +209,7 @@ main {
   flex-direction: column;
   justify-content: start;
   gap: 3lvh;
+  pointer-events: none;
 }
 
 .leftshift_container {
@@ -262,6 +266,14 @@ main {
   align-items: center;
 }
 
+.further_next > .temp {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .score_board {
   color: black;
   font-size: 16px;
@@ -274,4 +286,35 @@ main {
   letter-spacing: 0.2em;
   background-color: white;
   padding: 5px;
+  /* pointer-events: none; */
+}
+
+/* 기타 시스템 UI */
+
+.start_btn {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  border: 3px solid rgb(3, 202, 186);
+  background-color: rgba(72, 13, 87, 0.4);
+  border-radius: 20px;
+  padding: 10px 20px;
+  position: absolute;
+  top: calc(50% - 30px);
+  left: calc(50% - 90px);
+  cursor: pointer;
+}
+
+.count_down_num {
+  color: rgb(16, 247, 227);
+  font-size: 200px;
+  font-weight: bolder;
+  position: absolute;
+  top: calc(50% - 0.7em);
+  left: calc(50% - 0.25em);
+  transition: all 0.5s;
+}
+
+.count_down_animation {
+  font-size: 80px;
 }

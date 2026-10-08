@@ -3,28 +3,70 @@ import {
   minoDatas,
   makeMino,
   gridDatas,
-  hold,
-  makeMinoBag,
   minoBag,
   refillBag,
 } from "./mino_datas.js";
-import "./game.js";
+import {
+  rendNext,
+  rendHold,
+  gameData,
+  gameGridData,
+  takeoutNext,
+  minoDrop,
+} from "./game.js";
 import "./query.js";
 import "./mino_datas.js";
+import "./game.js";
+
+const gamePreview = () => {
+  refillBag();
+  rendNext();
+  rendHold();
+};
+
+const gameStart = () => {
+  takeoutNext();
+  rendHold();
+  console.log(gameData);
+};
+
+const countDown = (count) => {
+  if (count > 0) {
+    const num = document.createElement(`div`);
+    num.classList.add(`count_down_num`);
+    num.innerHTML = `${count}`;
+    document.body.appendChild(num);
+    setTimeout(() => {
+      num.classList.add(`count_down_animation`);
+    }, 50);
+    setTimeout(() => {
+      document.body.removeChild(num);
+      countDown(count - 1);
+    }, 1000);
+  } else {
+    setTimeout(() => {
+      gameData.isPlaying = true;
+      gameStart();
+    }, 10);
+  }
+};
+
+const gameReady = () => {
+  gamePreview();
+  countDown(3);
+};
 
 /* init */
 
-refillBag();
-nextCase.appendChild(minoBag[0]);
-Array(4)
-  .fill(0)
-  .forEach((x, i) => {
-    const furtherNextMino = document.createElement(`div`);
-    furtherNextMino.classList.add(`further_next_mino`);
-    furtherNextCase.appendChild(furtherNextMino);
-    furtherNextMino.append(minoBag[i + 1]);
-  });
+const startBtn = document.createElement(`button`);
+startBtn.innerHTML = `Tetris To Start!`;
+startBtn.classList.add(`start_btn`);
+document.body.appendChild(startBtn);
 
-// minoBag.forEach((x) => {
-//   console.log(x);
-// });
+startBtn.addEventListener(`click`, () => {
+  document.body.removeChild(startBtn);
+  gameReady();
+});
+
+console.log(gridDatas[0][0]); // 왼쪽 위
+console.log(gridDatas[19][9]); // 오른쪽 아래
